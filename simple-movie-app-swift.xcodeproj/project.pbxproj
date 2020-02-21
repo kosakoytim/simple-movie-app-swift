@@ -7,48 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA218767240014270058B6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA218766240014270058B6CC /* AppDelegate.swift */; };
-		FA218769240014270058B6CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA218768240014270058B6CC /* ViewController.swift */; };
-		FA21876C240014270058B6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA21876A240014270058B6CC /* Main.storyboard */; };
-		FA21876F240014270058B6CC /* simple_movie_app_swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA21876D240014270058B6CC /* simple_movie_app_swift.xcdatamodeld */; };
-		FA218771240014290058B6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA218770240014290058B6CC /* Assets.xcassets */; };
-		FA218774240014290058B6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA218772240014290058B6CC /* LaunchScreen.storyboard */; };
-		FA21877F240014290058B6CC /* simple_movie_app_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA21877E240014290058B6CC /* simple_movie_app_swiftTests.swift */; };
+		FA218796240015300058B6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA218795240015300058B6CC /* AppDelegate.swift */; };
+		FA218798240015300058B6CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA218797240015300058B6CC /* ViewController.swift */; };
+		FA21879B240015300058B6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA218799240015300058B6CC /* Main.storyboard */; };
+		FA21879E240015300058B6CC /* simple_movie_app_swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA21879C240015300058B6CC /* simple_movie_app_swift.xcdatamodeld */; };
+		FA2187A0240015310058B6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA21879F240015310058B6CC /* Assets.xcassets */; };
+		FA2187A3240015310058B6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2187A1240015310058B6CC /* LaunchScreen.storyboard */; };
+		FA2187AE240015310058B6CC /* simple_movie_app_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2187AD240015310058B6CC /* simple_movie_app_swiftTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FA21877B240014290058B6CC /* PBXContainerItemProxy */ = {
+		FA2187AA240015310058B6CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FA21875B240014270058B6CC /* Project object */;
+			containerPortal = FA21878A240015300058B6CC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FA218762240014270058B6CC;
+			remoteGlobalIDString = FA218791240015300058B6CC;
 			remoteInfo = "simple-movie-app-swift";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA218763240014270058B6CC /* simple-movie-app-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple-movie-app-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA218766240014270058B6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA218768240014270058B6CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA21876B240014270058B6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FA21876E240014270058B6CC /* simple_movie_app_swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = simple_movie_app_swift.xcdatamodel; sourceTree = "<group>"; };
-		FA218770240014290058B6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA218773240014290058B6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FA218775240014290058B6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA21877A240014290058B6CC /* simple-movie-app-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "simple-movie-app-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA21877E240014290058B6CC /* simple_movie_app_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simple_movie_app_swiftTests.swift; sourceTree = "<group>"; };
-		FA218780240014290058B6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA218792240015300058B6CC /* simple-movie-app-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple-movie-app-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA218795240015300058B6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA218797240015300058B6CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA21879A240015300058B6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA21879D240015300058B6CC /* simple_movie_app_swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = simple_movie_app_swift.xcdatamodel; sourceTree = "<group>"; };
+		FA21879F240015310058B6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA2187A2240015310058B6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA2187A4240015310058B6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2187A9240015310058B6CC /* simple-movie-app-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "simple-movie-app-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2187AD240015310058B6CC /* simple_movie_app_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simple_movie_app_swiftTests.swift; sourceTree = "<group>"; };
+		FA2187AF240015310058B6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FA218760240014270058B6CC /* Frameworks */ = {
+		FA21878F240015300058B6CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA218777240014290058B6CC /* Frameworks */ = {
+		FA2187A6240015310058B6CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,43 +58,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA21875A240014270058B6CC = {
+		FA218789240015300058B6CC = {
 			isa = PBXGroup;
 			children = (
-				FA218765240014270058B6CC /* simple-movie-app-swift */,
-				FA21877D240014290058B6CC /* simple-movie-app-swiftTests */,
-				FA218764240014270058B6CC /* Products */,
+				FA218794240015300058B6CC /* simple-movie-app-swift */,
+				FA2187AC240015310058B6CC /* simple-movie-app-swiftTests */,
+				FA218793240015300058B6CC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FA218764240014270058B6CC /* Products */ = {
+		FA218793240015300058B6CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA218763240014270058B6CC /* simple-movie-app-swift.app */,
-				FA21877A240014290058B6CC /* simple-movie-app-swiftTests.xctest */,
+				FA218792240015300058B6CC /* simple-movie-app-swift.app */,
+				FA2187A9240015310058B6CC /* simple-movie-app-swiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA218765240014270058B6CC /* simple-movie-app-swift */ = {
+		FA218794240015300058B6CC /* simple-movie-app-swift */ = {
 			isa = PBXGroup;
 			children = (
-				FA218766240014270058B6CC /* AppDelegate.swift */,
-				FA218768240014270058B6CC /* ViewController.swift */,
-				FA21876A240014270058B6CC /* Main.storyboard */,
-				FA218770240014290058B6CC /* Assets.xcassets */,
-				FA218772240014290058B6CC /* LaunchScreen.storyboard */,
-				FA218775240014290058B6CC /* Info.plist */,
-				FA21876D240014270058B6CC /* simple_movie_app_swift.xcdatamodeld */,
+				FA218795240015300058B6CC /* AppDelegate.swift */,
+				FA218797240015300058B6CC /* ViewController.swift */,
+				FA218799240015300058B6CC /* Main.storyboard */,
+				FA21879F240015310058B6CC /* Assets.xcassets */,
+				FA2187A1240015310058B6CC /* LaunchScreen.storyboard */,
+				FA2187A4240015310058B6CC /* Info.plist */,
+				FA21879C240015300058B6CC /* simple_movie_app_swift.xcdatamodeld */,
 			);
 			path = "simple-movie-app-swift";
 			sourceTree = "<group>";
 		};
-		FA21877D240014290058B6CC /* simple-movie-app-swiftTests */ = {
+		FA2187AC240015310058B6CC /* simple-movie-app-swiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA21877E240014290058B6CC /* simple_movie_app_swiftTests.swift */,
-				FA218780240014290058B6CC /* Info.plist */,
+				FA2187AD240015310058B6CC /* simple_movie_app_swiftTests.swift */,
+				FA2187AF240015310058B6CC /* Info.plist */,
 			);
 			path = "simple-movie-app-swiftTests";
 			sourceTree = "<group>";
@@ -102,13 +102,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA218762240014270058B6CC /* simple-movie-app-swift */ = {
+		FA218791240015300058B6CC /* simple-movie-app-swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA218783240014290058B6CC /* Build configuration list for PBXNativeTarget "simple-movie-app-swift" */;
+			buildConfigurationList = FA2187B2240015310058B6CC /* Build configuration list for PBXNativeTarget "simple-movie-app-swift" */;
 			buildPhases = (
-				FA21875F240014270058B6CC /* Sources */,
-				FA218760240014270058B6CC /* Frameworks */,
-				FA218761240014270058B6CC /* Resources */,
+				FA21878E240015300058B6CC /* Sources */,
+				FA21878F240015300058B6CC /* Frameworks */,
+				FA218790240015300058B6CC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -116,47 +116,47 @@
 			);
 			name = "simple-movie-app-swift";
 			productName = "simple-movie-app-swift";
-			productReference = FA218763240014270058B6CC /* simple-movie-app-swift.app */;
+			productReference = FA218792240015300058B6CC /* simple-movie-app-swift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FA218779240014290058B6CC /* simple-movie-app-swiftTests */ = {
+		FA2187A8240015310058B6CC /* simple-movie-app-swiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA218786240014290058B6CC /* Build configuration list for PBXNativeTarget "simple-movie-app-swiftTests" */;
+			buildConfigurationList = FA2187B5240015310058B6CC /* Build configuration list for PBXNativeTarget "simple-movie-app-swiftTests" */;
 			buildPhases = (
-				FA218776240014290058B6CC /* Sources */,
-				FA218777240014290058B6CC /* Frameworks */,
-				FA218778240014290058B6CC /* Resources */,
+				FA2187A5240015310058B6CC /* Sources */,
+				FA2187A6240015310058B6CC /* Frameworks */,
+				FA2187A7240015310058B6CC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FA21877C240014290058B6CC /* PBXTargetDependency */,
+				FA2187AB240015310058B6CC /* PBXTargetDependency */,
 			);
 			name = "simple-movie-app-swiftTests";
 			productName = "simple-movie-app-swiftTests";
-			productReference = FA21877A240014290058B6CC /* simple-movie-app-swiftTests.xctest */;
+			productReference = FA2187A9240015310058B6CC /* simple-movie-app-swiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FA21875B240014270058B6CC /* Project object */ = {
+		FA21878A240015300058B6CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Hackington;
 				TargetAttributes = {
-					FA218762240014270058B6CC = {
+					FA218791240015300058B6CC = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					FA218779240014290058B6CC = {
+					FA2187A8240015310058B6CC = {
 						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = FA218762240014270058B6CC;
+						TestTargetID = FA218791240015300058B6CC;
 					};
 				};
 			};
-			buildConfigurationList = FA21875E240014270058B6CC /* Build configuration list for PBXProject "simple-movie-app-swift" */;
+			buildConfigurationList = FA21878D240015300058B6CC /* Build configuration list for PBXProject "simple-movie-app-swift" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -164,29 +164,29 @@
 				en,
 				Base,
 			);
-			mainGroup = FA21875A240014270058B6CC;
-			productRefGroup = FA218764240014270058B6CC /* Products */;
+			mainGroup = FA218789240015300058B6CC;
+			productRefGroup = FA218793240015300058B6CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA218762240014270058B6CC /* simple-movie-app-swift */,
-				FA218779240014290058B6CC /* simple-movie-app-swiftTests */,
+				FA218791240015300058B6CC /* simple-movie-app-swift */,
+				FA2187A8240015310058B6CC /* simple-movie-app-swiftTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FA218761240014270058B6CC /* Resources */ = {
+		FA218790240015300058B6CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA218774240014290058B6CC /* LaunchScreen.storyboard in Resources */,
-				FA218771240014290058B6CC /* Assets.xcassets in Resources */,
-				FA21876C240014270058B6CC /* Main.storyboard in Resources */,
+				FA2187A3240015310058B6CC /* LaunchScreen.storyboard in Resources */,
+				FA2187A0240015310058B6CC /* Assets.xcassets in Resources */,
+				FA21879B240015300058B6CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA218778240014290058B6CC /* Resources */ = {
+		FA2187A7240015310058B6CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,47 +196,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FA21875F240014270058B6CC /* Sources */ = {
+		FA21878E240015300058B6CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA218769240014270058B6CC /* ViewController.swift in Sources */,
-				FA21876F240014270058B6CC /* simple_movie_app_swift.xcdatamodeld in Sources */,
-				FA218767240014270058B6CC /* AppDelegate.swift in Sources */,
+				FA218798240015300058B6CC /* ViewController.swift in Sources */,
+				FA21879E240015300058B6CC /* simple_movie_app_swift.xcdatamodeld in Sources */,
+				FA218796240015300058B6CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA218776240014290058B6CC /* Sources */ = {
+		FA2187A5240015310058B6CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA21877F240014290058B6CC /* simple_movie_app_swiftTests.swift in Sources */,
+				FA2187AE240015310058B6CC /* simple_movie_app_swiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FA21877C240014290058B6CC /* PBXTargetDependency */ = {
+		FA2187AB240015310058B6CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FA218762240014270058B6CC /* simple-movie-app-swift */;
-			targetProxy = FA21877B240014290058B6CC /* PBXContainerItemProxy */;
+			target = FA218791240015300058B6CC /* simple-movie-app-swift */;
+			targetProxy = FA2187AA240015310058B6CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FA21876A240014270058B6CC /* Main.storyboard */ = {
+		FA218799240015300058B6CC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA21876B240014270058B6CC /* Base */,
+				FA21879A240015300058B6CC /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FA218772240014290058B6CC /* LaunchScreen.storyboard */ = {
+		FA2187A1240015310058B6CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA218773240014290058B6CC /* Base */,
+				FA2187A2240015310058B6CC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -244,7 +244,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FA218781240014290058B6CC /* Debug */ = {
+		FA2187B0240015310058B6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -305,7 +305,7 @@
 			};
 			name = Debug;
 		};
-		FA218782240014290058B6CC /* Release */ = {
+		FA2187B1240015310058B6CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -360,7 +360,7 @@
 			};
 			name = Release;
 		};
-		FA218784240014290058B6CC /* Debug */ = {
+		FA2187B3240015310058B6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -378,7 +378,7 @@
 			};
 			name = Debug;
 		};
-		FA218785240014290058B6CC /* Release */ = {
+		FA2187B4240015310058B6CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -396,7 +396,7 @@
 			};
 			name = Release;
 		};
-		FA218787240014290058B6CC /* Debug */ = {
+		FA2187B6240015310058B6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -417,7 +417,7 @@
 			};
 			name = Debug;
 		};
-		FA218788240014290058B6CC /* Release */ = {
+		FA2187B7240015310058B6CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -441,29 +441,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA21875E240014270058B6CC /* Build configuration list for PBXProject "simple-movie-app-swift" */ = {
+		FA21878D240015300058B6CC /* Build configuration list for PBXProject "simple-movie-app-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA218781240014290058B6CC /* Debug */,
-				FA218782240014290058B6CC /* Release */,
+				FA2187B0240015310058B6CC /* Debug */,
+				FA2187B1240015310058B6CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA218783240014290058B6CC /* Build configuration list for PBXNativeTarget "simple-movie-app-swift" */ = {
+		FA2187B2240015310058B6CC /* Build configuration list for PBXNativeTarget "simple-movie-app-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA218784240014290058B6CC /* Debug */,
-				FA218785240014290058B6CC /* Release */,
+				FA2187B3240015310058B6CC /* Debug */,
+				FA2187B4240015310058B6CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA218786240014290058B6CC /* Build configuration list for PBXNativeTarget "simple-movie-app-swiftTests" */ = {
+		FA2187B5240015310058B6CC /* Build configuration list for PBXNativeTarget "simple-movie-app-swiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA218787240014290058B6CC /* Debug */,
-				FA218788240014290058B6CC /* Release */,
+				FA2187B6240015310058B6CC /* Debug */,
+				FA2187B7240015310058B6CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -471,17 +471,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FA21876D240014270058B6CC /* simple_movie_app_swift.xcdatamodeld */ = {
+		FA21879C240015300058B6CC /* simple_movie_app_swift.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FA21876E240014270058B6CC /* simple_movie_app_swift.xcdatamodel */,
+				FA21879D240015300058B6CC /* simple_movie_app_swift.xcdatamodel */,
 			);
-			currentVersion = FA21876E240014270058B6CC /* simple_movie_app_swift.xcdatamodel */;
+			currentVersion = FA21879D240015300058B6CC /* simple_movie_app_swift.xcdatamodel */;
 			path = simple_movie_app_swift.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = FA21875B240014270058B6CC /* Project object */;
+	rootObject = FA21878A240015300058B6CC /* Project object */;
 }
