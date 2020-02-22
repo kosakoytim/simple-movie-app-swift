@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 
-class HomeViewController: UIViewController, HomeViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
+class HomeViewController: UIViewController, HomeViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var nowPlayingMovieImage: UIImageView!
     @IBOutlet weak var nowPlayingMovieTitle: UILabel!
     @IBOutlet weak var homeScrollView: UIScrollView!
@@ -25,10 +25,6 @@ class HomeViewController: UIViewController, HomeViewDelegate, UICollectionViewDa
         self.navigationController?.isNavigationBarHidden = true
         homePresenter.setViewDelegate(homeViewDelegate: self)
         onFirstLaunch()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        homeScrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height + 20)
     }
     
     private func onFirstLaunch() {
@@ -71,6 +67,10 @@ class HomeViewController: UIViewController, HomeViewDelegate, UICollectionViewDa
         cell.setMoviesOfCategory(movieFetched: self.homeCategories[indexPath.item].movies)
         cell.setHomePresenter(passedHomePresenter: self.homePresenter)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width, height: 225)
     }
 }
 

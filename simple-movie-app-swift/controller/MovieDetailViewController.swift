@@ -50,10 +50,6 @@ class MovieDetailViewController: UIViewController, MovieDetailDelegate, UICollec
         movieDetailPresenter.getMovieDetail(query: MovieQuery.Detail(api_key: "4fec1de9e64760cc69913fd294b9ec82", id: movieId))
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        movieDetailScrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height + 20)
-    }
-    
     func setMovieDetail(title: String, rating: String, poster: String, backdrop: String, yearAndGenre: String, runtime: String, status: String, releaseDate: String, overview: String, productionCompanyLogo: [String]) {
         self.movieDetailTitleLabel.text = title
         self.movieDetailRatingLabel.text = rating
@@ -66,6 +62,14 @@ class MovieDetailViewController: UIViewController, MovieDetailDelegate, UICollec
         self.movieDetailOverviewLabel.text = overview
         self.companyLogoImagePaths = productionCompanyLogo
         self.movieDetailProdCompCollectionView.reloadData()
+        
+        adjustHeight()
+    }
+    
+    func adjustHeight () {
+        self.movieDetailScrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: CGFloat(
+            UIScreen.main.bounds.height + self.movieDetailOverviewLabel.bounds.height
+        ))
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -75,7 +79,7 @@ class MovieDetailViewController: UIViewController, MovieDetailDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! ProductionCompanyCollectionViewCell
         
-        cell.productionCompanyLogoImage.kf.setImage(with: URL(string: self.companyLogoImagePaths[indexPath.item])) 
+        cell.productionCompanyLogoImage.kf.setImage(with: URL(string: self.companyLogoImagePaths[indexPath.item]))
         
         return cell
     }
