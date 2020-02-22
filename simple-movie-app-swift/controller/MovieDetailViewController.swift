@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MovieDetailViewController: UIViewController {
+class MovieDetailViewController: UIViewController, MovieDetailDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var movieDetailBackdropImage: UIImageView!
     
@@ -20,9 +20,10 @@ class MovieDetailViewController: UIViewController {
     
     @IBOutlet weak var movieDetailYearGenreLabel: UILabel!
     
+    @IBAction func movieDetailBackButtonOnTap(_ sender: UIButton, forEvent event: UIEvent) {
+        _ = navigationController?.popViewController(animated: true)
+    }
     @IBOutlet weak var movieDetailRuntimeLabel: UILabel!
-    
-    @IBOutlet weak var movieDetailDirectorLabel: UILabel!
     
     @IBOutlet weak var movieDetailProdCompColView: UICollectionView!
     
@@ -32,23 +33,49 @@ class MovieDetailViewController: UIViewController {
     
     @IBOutlet weak var movieDetailReleaseDateLabel: UILabel!
     
-    @IBOutlet weak var movieDetailBackButton: UIButton!
+    @IBOutlet weak var movieDetailScrollView: UIScrollView!
+    
+    @IBOutlet weak var movieDetailProdCompCollectionView: UICollectionView!
+    
+    var movieId : Int = Int()
+    private let movieDetailPresenter = MovieDetailPresenter(dataMovieManager: DataMovieManager())
+    private let reuseIdentifier = "ProductionCompanyCell"
+    private var companyLogoImagePaths = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.navigationController?.isNavigationBarHidden = true
+        movieDetailPresenter.setViewDelegate(movieDetailDelegate: self)
+        movieDetailPresenter.getMovieDetail(query: MovieQuery.Detail(api_key: "4fec1de9e64760cc69913fd294b9ec82", id: movieId))
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        movieDetailScrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height + 20)
     }
-    */
-
+    
+    func setMovieDetail(title: String, rating: String, poster: String, backdrop: String, yearAndGenre: String, runtime: String, status: String, releaseDate: String, overview: String, productionCompanyLogo: [String]) {
+        self.movieDetailTitleLabel.text = title
+        self.movieDetailRatingLabel.text = rating
+        self.movieDetailPosterImage.image = Tools.shared.setImageFromUrl(poster)
+        self.movieDetailBackdropImage.image = Tools.shared.setImageFromUrl(backdrop)
+        self.movieDetailYearGenreLabel.text = yearAndGenre
+        self.movieDetailRuntimeLabel.text = runtime
+        self.movieDetailStatusLabel.text = status
+        self.movieDetailReleaseDateLabel.text = releaseDate
+        self.movieDetailOverviewLabel.text = overview
+        self.companyLogoImagePaths = productionCompanyLogo
+        self.movieDetailProdCompCollectionView.reloadData()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.companyLogoImagePaths.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! ProductionCompanyCollectionViewCell
+        
+        cell.productionCompanyLogoImage.image = Tools.shared.setImageFromUrl(self.companyLogoImagePaths[indexPath.item])
+        
+        return cell
+    }
 }

@@ -24,6 +24,10 @@
 		FAE6BEAF2400FD5600689DD5 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEAE2400FD5600689DD5 /* MovieDetailPresenter.swift */; };
 		FAE6BEB324010A8700689DD5 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEB224010A8700689DD5 /* MovieDetailViewController.swift */; };
 		FAE6BEB52401217D00689DD5 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEB42401217D00689DD5 /* Tools.swift */; };
+		FAE6BEBB240159B800689DD5 /* ProductionCompanyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEBA240159B800689DD5 /* ProductionCompanyCollectionViewCell.swift */; };
+		FAE6BEBD2401650700689DD5 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEBC2401650700689DD5 /* CategoryCollectionViewCell.swift */; };
+		FAE6BEBF2401673A00689DD5 /* HomeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEBE2401673A00689DD5 /* HomeCategory.swift */; };
+		FAE6BEC12401702600689DD5 /* MoviePosterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEC02401702600689DD5 /* MoviePosterCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		FAE6BEAE2400FD5600689DD5 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
 		FAE6BEB224010A8700689DD5 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		FAE6BEB42401217D00689DD5 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		FAE6BEBA240159B800689DD5 /* ProductionCompanyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionCompanyCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAE6BEBC2401650700689DD5 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAE6BEBE2401673A00689DD5 /* HomeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategory.swift; sourceTree = "<group>"; };
+		FAE6BEC02401702600689DD5 /* MoviePosterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +162,9 @@
 		FA2187BB2400265E0058B6CC /* view */ = {
 			isa = PBXGroup;
 			children = (
+				FAE6BEBA240159B800689DD5 /* ProductionCompanyCollectionViewCell.swift */,
+				FAE6BEBC2401650700689DD5 /* CategoryCollectionViewCell.swift */,
+				FAE6BEC02401702600689DD5 /* MoviePosterCollectionViewCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -172,6 +183,7 @@
 			children = (
 				FAE6BEA02400E44900689DD5 /* Movie.swift */,
 				FAE6BEA22400E50200689DD5 /* ProductionCompanies.swift */,
+				FAE6BEBE2401673A00689DD5 /* HomeCategory.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -372,15 +384,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAE6BEAF2400FD5600689DD5 /* MovieDetailPresenter.swift in Sources */,
+				FAE6BEBB240159B800689DD5 /* ProductionCompanyCollectionViewCell.swift in Sources */,
 				FA218798240015300058B6CC /* HomeViewController.swift in Sources */,
 				FA21879E240015300058B6CC /* simple_movie_app_swift.xcdatamodeld in Sources */,
 				FAE6BEB324010A8700689DD5 /* MovieDetailViewController.swift in Sources */,
 				FA218796240015300058B6CC /* AppDelegate.swift in Sources */,
+				FAE6BEBD2401650700689DD5 /* CategoryCollectionViewCell.swift in Sources */,
 				FA2187C42400271B0058B6CC /* Constants.swift in Sources */,
 				FAE6BEA52400E6B400689DD5 /* DataMovieManager.swift in Sources */,
+				FAE6BEC12401702600689DD5 /* MoviePosterCollectionViewCell.swift in Sources */,
 				FAE6BEB52401217D00689DD5 /* Tools.swift in Sources */,
 				FAE6BEA32400E50200689DD5 /* ProductionCompanies.swift in Sources */,
 				FAE6BEA92400F33200689DD5 /* HomePresenter.swift in Sources */,
+				FAE6BEBF2401673A00689DD5 /* HomeCategory.swift in Sources */,
 				FAE6BEA12400E44900689DD5 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
