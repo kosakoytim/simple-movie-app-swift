@@ -23,7 +23,6 @@
 		FAE6BEA92400F33200689DD5 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEA82400F33200689DD5 /* HomePresenter.swift */; };
 		FAE6BEAF2400FD5600689DD5 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEAE2400FD5600689DD5 /* MovieDetailPresenter.swift */; };
 		FAE6BEB324010A8700689DD5 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEB224010A8700689DD5 /* MovieDetailViewController.swift */; };
-		FAE6BEB52401217D00689DD5 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEB42401217D00689DD5 /* Tools.swift */; };
 		FAE6BEBB240159B800689DD5 /* ProductionCompanyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEBA240159B800689DD5 /* ProductionCompanyCollectionViewCell.swift */; };
 		FAE6BEBD2401650700689DD5 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEBC2401650700689DD5 /* CategoryCollectionViewCell.swift */; };
 		FAE6BEBF2401673A00689DD5 /* HomeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6BEBE2401673A00689DD5 /* HomeCategory.swift */; };
@@ -65,7 +64,6 @@
 		FAE6BEA82400F33200689DD5 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		FAE6BEAE2400FD5600689DD5 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
 		FAE6BEB224010A8700689DD5 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
-		FAE6BEB42401217D00689DD5 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		FAE6BEBA240159B800689DD5 /* ProductionCompanyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionCompanyCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAE6BEBC2401650700689DD5 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAE6BEBE2401673A00689DD5 /* HomeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategory.swift; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 			children = (
 				FA2187C1240026F60058B6CC /* manager */,
 				FA2187C32400271B0058B6CC /* Constants.swift */,
-				FAE6BEB42401217D00689DD5 /* Tools.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -393,7 +390,6 @@
 				FA2187C42400271B0058B6CC /* Constants.swift in Sources */,
 				FAE6BEA52400E6B400689DD5 /* DataMovieManager.swift in Sources */,
 				FAE6BEC12401702600689DD5 /* MoviePosterCollectionViewCell.swift in Sources */,
-				FAE6BEB52401217D00689DD5 /* Tools.swift in Sources */,
 				FAE6BEA32400E50200689DD5 /* ProductionCompanies.swift in Sources */,
 				FAE6BEA92400F33200689DD5 /* HomePresenter.swift in Sources */,
 				FAE6BEBF2401673A00689DD5 /* HomeCategory.swift in Sources */,

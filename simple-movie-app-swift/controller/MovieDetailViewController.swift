@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MovieDetailViewController: UIViewController, MovieDetailDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
 
@@ -56,8 +57,8 @@ class MovieDetailViewController: UIViewController, MovieDetailDelegate, UICollec
     func setMovieDetail(title: String, rating: String, poster: String, backdrop: String, yearAndGenre: String, runtime: String, status: String, releaseDate: String, overview: String, productionCompanyLogo: [String]) {
         self.movieDetailTitleLabel.text = title
         self.movieDetailRatingLabel.text = rating
-        self.movieDetailPosterImage.image = Tools.shared.setImageFromUrl(poster)
-        self.movieDetailBackdropImage.image = Tools.shared.setImageFromUrl(backdrop)
+        self.movieDetailPosterImage.kf.setImage(with: URL(string: poster))
+        self.movieDetailBackdropImage.kf.setImage(with: URL(string: backdrop))
         self.movieDetailYearGenreLabel.text = yearAndGenre
         self.movieDetailRuntimeLabel.text = runtime
         self.movieDetailStatusLabel.text = status
@@ -74,7 +75,7 @@ class MovieDetailViewController: UIViewController, MovieDetailDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! ProductionCompanyCollectionViewCell
         
-        cell.productionCompanyLogoImage.image = Tools.shared.setImageFromUrl(self.companyLogoImagePaths[indexPath.item])
+        cell.productionCompanyLogoImage.kf.setImage(with: URL(string: self.companyLogoImagePaths[indexPath.item])) 
         
         return cell
     }

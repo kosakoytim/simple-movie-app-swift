@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewController: UIViewController, HomeViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet weak var nowPlayingMovieImage: UIImageView!
@@ -39,7 +40,7 @@ class HomeViewController: UIViewController, HomeViewDelegate, UICollectionViewDa
     
     func setNowPlayingSection(movie: Movie) {
         nowPlayingMovieTitle.text = movie.title
-        nowPlayingMovieImage.image = Tools.shared.setImageFromUrl(movie.backdrop_path)
+        nowPlayingMovieImage.kf.setImage(with: URL(string: movie.backdrop_path))
     }
     
     func addMovieSection(category: Category, movies: [Movie]) {

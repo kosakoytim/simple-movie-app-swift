@@ -7,6 +7,7 @@ target 'simple-movie-app-swift' do
 
   pod 'Alamofire', '~> 5.0'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'Kingfisher', '~> 5.0'
 
   # Pods for simple-movie-app-swift
 

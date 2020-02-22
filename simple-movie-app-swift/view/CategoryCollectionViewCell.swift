@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CategoryCollectionViewCell: UICollectionViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
     
@@ -43,7 +44,7 @@ class CategoryCollectionViewCell: UICollectionViewCell, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifierMoviePoster, for: indexPath as IndexPath) as! MoviePosterCollectionViewCell
         
-        cell.moviePosterImage.image = Tools.shared.setImageFromUrl(self.movies[indexPath.item].poster_path)
+        cell.moviePosterImage.kf.setImage(with: URL(string: self.movies[indexPath.item].poster_path))
         return cell
     }
 }
