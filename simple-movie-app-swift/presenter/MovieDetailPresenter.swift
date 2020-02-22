@@ -1,5 +1,5 @@
 //
-//  DataMovieInterface.swift
+//  MovieDetailPresenter.swift
 //  simple-movie-app-swift
 //
 //  Created by Macbook on 22/02/20.

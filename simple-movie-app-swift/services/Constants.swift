@@ -11,5 +11,5 @@ import Foundation
 final class Constants {
     let API_URL = "https://api.themoviedb.org"
     let LATEST_API_VERSION = "3"
-    let IMAGE_PRE_URL = "https://image.tmdb.org/t/p/"
+    let IMAGE_PRE_URL_W500 = "https://image.tmdb.org/t/p/w500"
 }
