@@ -42,12 +42,13 @@ class MovieDetailViewController: UIViewController, MovieDetailDelegate, UICollec
     private let movieDetailPresenter = MovieDetailPresenter(dataMovieManager: DataMovieManager())
     private let reuseIdentifier = "ProductionCompanyCell"
     private var companyLogoImagePaths = [String]()
+    private let c = Constants()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
         movieDetailPresenter.setViewDelegate(movieDetailDelegate: self)
-        movieDetailPresenter.getMovieDetail(query: MovieQuery.Detail(api_key: "4fec1de9e64760cc69913fd294b9ec82", id: movieId))
+        movieDetailPresenter.getMovieDetail(query: MovieQuery.Detail(api_key: c.SECRET_API_KEY, id: movieId))
     }
     
     func setMovieDetail(title: String, rating: String, poster: String, backdrop: String, yearAndGenre: String, runtime: String, status: String, releaseDate: String, overview: String, productionCompanyLogo: [String]) {

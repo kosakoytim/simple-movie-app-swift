@@ -19,6 +19,7 @@ class HomeViewController: UIViewController, HomeViewDelegate, UICollectionViewDa
     private let reuseIdentifier = "CategoryCell"
     private var homeCategories = [HomeCategory]()
     private var passedMovieDetailId : Int = Int()
+    private let c = Constants()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +29,10 @@ class HomeViewController: UIViewController, HomeViewDelegate, UICollectionViewDa
     }
     
     private func onFirstLaunch() {
-        homePresenter.getNowPlayingMovie(query: MovieQuery(api_key: "4fec1de9e64760cc69913fd294b9ec82"))
-        homePresenter.getPopularMovies(query: MovieQuery(api_key: "4fec1de9e64760cc69913fd294b9ec82"))
-        homePresenter.getTopRatedMovies(query: MovieQuery(api_key: "4fec1de9e64760cc69913fd294b9ec82"))
-        homePresenter.getUpcomingMovies(query: MovieQuery(api_key: "4fec1de9e64760cc69913fd294b9ec82"))
+        homePresenter.getNowPlayingMovie(query: MovieQuery(api_key: c.SECRET_API_KEY))
+        homePresenter.getPopularMovies(query: MovieQuery(api_key: c.SECRET_API_KEY))
+        homePresenter.getTopRatedMovies(query: MovieQuery(api_key: c.SECRET_API_KEY))
+        homePresenter.getUpcomingMovies(query: MovieQuery(api_key: c.SECRET_API_KEY))
     }
     
     func setNowPlayingSection(movie: Movie) {
